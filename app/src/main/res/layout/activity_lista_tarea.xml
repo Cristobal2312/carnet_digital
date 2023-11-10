@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkBoxDesayunar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desayunar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAsearse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asearse" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCompras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Realizar compras" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAlmuerzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparar Almuerzo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLlamarHijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Llamar Hijo/a" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVerPrograma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver programa" />
+
+    <Button
+        android:id="@+id/btnAgregarTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Agregar Tarea" />
+
+    <EditText
+        android:id="@+id/etNotasMedicas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregar notas medicas..." />
+
+    <Button
+        android:id="@+id/btnModificarNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar Notas" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">carnet digital</string>
+
+    //------Actividad Registro------
+    <string name="CarnetDigitalTXT">Carnet Digital</string>
+    <string name="NombreEt">Nombres</string>
+    <string name="Numero_ficha">Numero de ficha</string>
+    <string name="rut">Rut</string>
+    <string name="Fecha_inicio">Fecha inicio</string>
+    <string name="NombreMe">Nombre Medico</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="ver_horas">Ver horas</string>
+
+    //-----------Actividad login------->
+    <string name="Siguiente_HoraTXT">Siquiente Hora:</string>
+    <string name="Box">BOX</string>
+    <string name="Ver_registro">ver registro</string>
+    <string name="Registro_Hora">Registro de hora</string>
+    <string name="notaTXT">nota: Recordar que debe presentarse 10 minutos antes a la consulta</string>
+    <string name="BtnLogeo">Ingresar</string>
+    //_------------
+    <string name="mapsTXT">Revisa como llegar a tu consulta aqui</string>
+</resources>

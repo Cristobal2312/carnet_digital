@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registrado">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:text="@string/CarnetDigitalTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <EditText
+                android:id="@+id/NombreEt"
+                android:hint="@string/NombreEt"
+                android:padding="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icono_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/Numero_ficha"
+                android:hint="@string/Numero_ficha"
+                android:padding="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icono_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/rut"
+                android:hint="@string/rut"
+                android:padding="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icono_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/Fecha_inicio"
+                android:hint="@string/Fecha_inicio"
+                android:padding="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/calendario_icono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/NombreMe"
+                android:hint="@string/NombreMe"
+                android:padding="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/icono_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/editar_perfil"
+            android:text="@string/editar_perfil"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/ver_horas"
+            android:text="@string/ver_horas"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

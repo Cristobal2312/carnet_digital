@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sisguiente_hora">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="@string/Siguiente_HoraTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:text="colocar horario en una casilla para mostrar el horario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/notaTXT"
+            android:text="@string/notaTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/NombreMe"
+                android:hint="@string/NombreMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icono_nombres"
+                android:drawablePadding="10dp"
+                android:padding="20dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/Box"
+                android:hint="@string/Box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/calendario_icono"
+                android:drawablePadding="10dp"
+                android:padding="20dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/ver_registro"
+            android:text="@string/Ver_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/Registro_Hora"
+            android:text="@string/Registro_Hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/mapsTXT"
+            android:text="@string/mapsTXT"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
