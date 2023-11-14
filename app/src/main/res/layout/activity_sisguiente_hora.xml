@@ -45,13 +45,12 @@
 
             <EditText
                 android:id="@+id/NombreMe"
-                android:hint="@string/NombreMe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/icono_nombres"
                 android:drawablePadding="10dp"
-                android:padding="20dp"
-                />
+                android:hint="@string/NombreMe"
+                android:padding="20dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
