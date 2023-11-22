@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "374292080184",
+    "project_id": "carnet-virtual-7db08",
+    "storage_bucket": "carnet-virtual-7db08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374292080184:android:975701d124be70ca3328cd",
+        "android_client_info": {
+          "package_name": "com.example.carnetdigital"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcs6YjegGJAc_p5UgLsGL7Br13hoWIp50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

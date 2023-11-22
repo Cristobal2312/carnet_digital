@@ -20,4 +20,8 @@
     <string name="BtnLogeo">Ingresar</string>
     //_------------
     <string name="mapsTXT">Revisa como llegar a tu consulta aqui</string>
+
+    //-----Main Activity----
+    <string name="Btn_Horas">Horas</string>
+    <string name="Btn_Registro">Registro</string>
 </resources>
