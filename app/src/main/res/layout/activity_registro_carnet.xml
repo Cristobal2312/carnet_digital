@@ -24,7 +24,7 @@
                 android:layout_marginTop="12dp"
                 android:backgroundTint="#C16060"
                 android:ems="10"
-                android:hint="Nombre"
+                android:hint=" Nombre (Los 2 Nombre)"
                 android:inputType="text" />
 
             <EditText
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Apellido"
+                android:hint="Apellido (Los 2 Apellido)"
                 android:inputType="text" />
 
             <EditText
@@ -42,8 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Rut"
-                android:inputType="number" />
+                android:hint="Rut (12.123.123-1)"
+                android:inputType="phone" />
 
             <EditText
                 android:id="@+id/txtNacionalidad"
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Sexo"
+                android:hint="Sexo (F o M)"
                 android:inputType="text" />
 
             <EditText
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Fecha Nacimiento"
+                android:hint="Fecha Nacimiento (DD/MM/YYYY)"
                 android:inputType="datetime" />
 
             <EditText
@@ -78,8 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Numero Documento"
-                android:inputType="number" />
+                android:hint="Numero Documento (123.123.123)"
+                android:inputType="phone" />
 
             <EditText
                 android:id="@+id/txtFechaEmision"
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Fecha de Emision"
+                android:hint="Fecha de Emision (DD/MM/YYYY)"
                 android:inputType="datetime" />
 
             <EditText
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:ems="10"
-                android:hint="Fecha de Vencimiento"
+                android:hint="Fecha de Vencimiento (DD/MM/YYYY)"
                 android:inputType="datetime" />
 
             <Button
