@@ -2,4 +2,5 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="mi_color_de_barra_de_estado">#3240BC</color>
 </resources>

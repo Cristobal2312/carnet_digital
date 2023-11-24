@@ -12,6 +12,7 @@ public class menu_principal extends AppCompatActivity {
 
     Button Btn_Horas, Btn_Registro;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +38,12 @@ public class menu_principal extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+    }
+    public void Carnet(View view){
+        Intent carnet = new Intent(menu_principal.this, CarnetDigital.class);
+        startActivity(carnet);
     }
 }
 
