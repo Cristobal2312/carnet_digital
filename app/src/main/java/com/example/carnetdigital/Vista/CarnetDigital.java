@@ -86,7 +86,7 @@ public class CarnetDigital extends AppCompatActivity {
                     " FROM " + UtilityUS.TABLA_CARNET + " WHERE " + UtilityUS.CAMPO_IDUSER + "=? ", parametros);
             cursor.moveToFirst();
 
-            //obtener los datos del cursor Usuario y Contraseña de la base de dato
+            //obtener los datos del cursor Usuario y Contraseña de la base de datoss
             String NombreA = cursor.getString(0);
             String ApellidoA = cursor.getString(1);
             String RutA = cursor.getString(2);
