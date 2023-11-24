@@ -13,9 +13,12 @@
         android:theme="@style/Theme.CarnetDigital"
         tools:targetApi="31">
         <activity
+            android:name=".Vista.RegistroCarnet"
+            android:exported="false" />
+        <activity
             android:name=".Vista.CarnetDigitalFondos"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".Vista.CarnetDigital"
             android:exported="false"

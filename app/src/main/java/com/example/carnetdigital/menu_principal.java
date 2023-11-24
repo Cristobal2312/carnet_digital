@@ -7,11 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.carnetdigital.Vista.CarnetDigital;
+import com.example.carnetdigital.Vista.RegistroCarnet;
 
 
 public class menu_principal extends AppCompatActivity {
 
-    Button Btn_Horas, Btn_Registro;
+    Button Btn_Horas, Btn_Registro, btn_RegistrarCarnet;
 
 
     @Override
@@ -21,6 +22,7 @@ public class menu_principal extends AppCompatActivity {
 
         Btn_Horas = findViewById(R.id.Btn_Horas);
         Btn_Registro = findViewById(R.id.Btn_Registro);
+        btn_RegistrarCarnet = findViewById(R.id.btn_RegistrarCarnet);
 
         Btn_Horas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +38,14 @@ public class menu_principal extends AppCompatActivity {
             public void onClick(View view) {
                 // Iniciar la actividad de Registro
                 Intent intent = new Intent(menu_principal.this, registrado.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_RegistrarCarnet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(menu_principal.this, RegistroCarnet.class);
                 startActivity(intent);
             }
         });

@@ -16,15 +16,15 @@ public class UtilityUS {
 
 
     public static final String CREAR_TABLA_CARNET = "CREATE TABLE " + TABLA_CARNET + " ("+
-            CAMPO_IDUSER + " INTEGER PRIMARY KEY, " +
+            CAMPO_IDUSER + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             CAMPO_NOMBRE + " TEXT, " +
             CAMPO_APELLIDO + " TEXT, " +
             CAMPO_RUT + " TEXT, " +
             CAMPO_NACIONALIDAD + " TEXT, " +
             CAMPO_SEXO + " TEXT, " +
-            CAMPO_FENACIMIENTO + " DATE " +
+            CAMPO_FENACIMIENTO + " DATE, " +
             CAMPO_NUDOCUMENTO + " TEXT, " +
-            CAMPO_FEEMISION + " DATE " +
+            CAMPO_FEEMISION + " DATE, " +
             CAMPO_FEVENCIMIENTO + "  DATE )";
 
 
