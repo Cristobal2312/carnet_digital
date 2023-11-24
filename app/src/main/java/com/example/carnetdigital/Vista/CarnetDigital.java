@@ -1,4 +1,4 @@
-package com.example.carnetdigital;
+package com.example.carnetdigital.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -9,6 +9,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.carnetdigital.R;
+import com.example.carnetdigital.menu_principal;
 
 public class CarnetDigital extends AppCompatActivity {
 

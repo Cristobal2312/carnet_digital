@@ -1,4 +1,4 @@
-package com.example.carnetdigital;
+package com.example.carnetdigital.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -6,6 +6,8 @@ import androidx.core.content.ContextCompat;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
+
+import com.example.carnetdigital.R;
 
 public class CarnetDigitalFondos extends AppCompatActivity {
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3240BC"
-    tools:context=".CarnetDigitalFondos">
+    tools:context=".Vista.CarnetDigitalFondos">
 
     <TextView
         android:id="@+id/textView5"
