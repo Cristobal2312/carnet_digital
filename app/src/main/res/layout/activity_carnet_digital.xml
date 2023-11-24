@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnSoloDatos"
             android:layout_width="133dp"
             android:layout_height="137dp"
             android:layout_marginStart="54dp"
@@ -158,7 +158,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btnVolver"
                     android:layout_width="92dp"
                     android:layout_height="77dp"
                     android:layout_marginStart="77dp"
