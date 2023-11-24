@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CarnetDigital"
         tools:targetApi="31">
         <activity
+            android:name=".MostrarAgendaHora"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarAgendaHora"
+            android:exported="false" />
+        <activity
             android:name=".Vista.RegistroCarnet"
             android:exported="false" />
         <activity
