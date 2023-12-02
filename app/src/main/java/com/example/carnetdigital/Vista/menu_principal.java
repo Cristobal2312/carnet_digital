@@ -1,4 +1,4 @@
-package com.example.carnetdigital;
+package com.example.carnetdigital.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -6,13 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.carnetdigital.Vista.CarnetDigital;
-import com.example.carnetdigital.Vista.RegistroCarnet;
+import com.example.carnetdigital.R;
 
 
 public class menu_principal extends AppCompatActivity {
 
-    Button Btn_Horas, Btn_Registro, btn_RegistrarCarnet;
+    Button Btn_Horas, Btn_Registro, btn_RegistrarCarnet,btn_mapsCarnet;
 
 
     @Override
@@ -23,6 +22,7 @@ public class menu_principal extends AppCompatActivity {
         Btn_Horas = findViewById(R.id.Btn_Horas);
         Btn_Registro = findViewById(R.id.Btn_Registro);
         btn_RegistrarCarnet = findViewById(R.id.btn_RegistrarCarnet);
+        btn_mapsCarnet=findViewById(R.id.btn_mapsCarnet);
 
         Btn_Horas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +46,14 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(menu_principal.this, RegistroCarnet.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_mapsCarnet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(menu_principal.this, MapsActivity.class);
                 startActivity(intent);
             }
         });

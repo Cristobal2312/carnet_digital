@@ -1,4 +1,4 @@
-package com.example.carnetdigital;
+package com.example.carnetdigital.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.carnetdigital.R;
 
 public class RegistrarAgendaHora extends AppCompatActivity {
 

@@ -1,10 +1,12 @@
-package com.example.carnetdigital;
+package com.example.carnetdigital.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.carnetdigital.R;
 
 public class MostrarAgendaHora extends AppCompatActivity {
 

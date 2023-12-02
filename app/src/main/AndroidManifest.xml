@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,11 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarnetDigital"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD6dJIvQt3VeXnNqT2lRO-GOpQI8WFqqCw" />
         <activity
-            android:name=".MostrarAgendaHora"
+            android:name=".Vista.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Vista.MostrarAgendaHora"
             android:exported="false" />
         <activity
-            android:name=".RegistrarAgendaHora"
+            android:name=".Vista.RegistrarAgendaHora"
             android:exported="false" />
         <activity
             android:name=".Vista.RegistroCarnet"
@@ -30,22 +38,16 @@
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Lista_Tarea"
+            android:name=".Vista.Lista_Tarea"
             android:exported="false" />
         <activity
-            android:name=".Sisguiente_hora"
+            android:name=".Vista.menu_principal"
             android:exported="false" />
         <activity
-            android:name=".menu_principal"
+            android:name=".Vista.registrado"
             android:exported="false" />
         <activity
-            android:name=".registrado"
-            android:exported="false" />
-        <activity
-            android:name=".SIguiente_hora"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Vista.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

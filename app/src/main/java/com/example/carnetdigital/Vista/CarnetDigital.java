@@ -17,7 +17,6 @@ import android.widget.Toast;
 import com.example.carnetdigital.Controlador.DBHelper;
 import com.example.carnetdigital.Controlador.UtilityUS;
 import com.example.carnetdigital.R;
-import com.example.carnetdigital.menu_principal;
 
 public class CarnetDigital extends AppCompatActivity {
 

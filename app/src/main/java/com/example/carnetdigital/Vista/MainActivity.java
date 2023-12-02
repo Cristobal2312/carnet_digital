@@ -1,4 +1,4 @@
-package com.example.carnetdigital;
+package com.example.carnetdigital.Vista;
 
 
 
@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.os.Bundle;
 
 
+import com.example.carnetdigital.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -35,13 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     } private void VerificacionUsuario(){
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-        if(firebaseUser == null){
-            startActivity(new Intent(MainActivity.this, menu_principal.class));
-            finish();
-        }else{
-            startActivity(new Intent(MainActivity.this, menu_principal.class));
-            finish();
-        }
+        startActivity(new Intent(MainActivity.this, menu_principal.class));
+        finish();
 
     }
 

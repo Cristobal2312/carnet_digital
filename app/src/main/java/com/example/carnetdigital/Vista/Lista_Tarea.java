@@ -1,8 +1,10 @@
-package com.example.carnetdigital;
+package com.example.carnetdigital.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.carnetdigital.R;
 
 public class Lista_Tarea extends AppCompatActivity {
 

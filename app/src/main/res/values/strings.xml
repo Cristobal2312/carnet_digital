@@ -24,4 +24,5 @@
     //-----Main Activity----
     <string name="Btn_Horas">Horas</string>
     <string name="Btn_Registro">Registro</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

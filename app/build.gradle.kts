@@ -4,6 +4,7 @@ plugins {
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
     id("com.google.firebase.firebase-perf")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -33,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -49,7 +53,10 @@ dependencies {
     implementation("com.google.firebase:firebase-database:20.2.2")
     implementation("com.google.firebase:firebase-firestore:24.7.1")
     implementation("com.github.bumptech.glide:glide:4.12.0")
-    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation ("com.google.android.gms:play-services-location:17.1.0")
     implementation("androidx.navigation:navigation-fragment:2.4.0") // Cambiado de 2.7.4 a 2.4.0
     implementation("androidx.navigation:navigation-ui:2.4.0")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
 }
