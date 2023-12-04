@@ -24,22 +24,34 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         myMap = googleMap;
 
+
         LatLng ubicacion = new LatLng(-30.609834297027078, -71.20177662698983);
         myMap.addMarker(new MarkerOptions().position(ubicacion).title("Cesfam Fray Jorge"));
         myMap.moveCamera(CameraUpdateFactory.newLatLng(ubicacion));
+
+        float zoomLevel = 15.0f;
+        myMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubicacion, zoomLevel));
 
         // Enable the desired UI settings
         myMap.getUiSettings().setZoomControlsEnabled(true);
         myMap.getUiSettings().setCompassEnabled(true);
         myMap.getUiSettings().setScrollGesturesEnabled(true);
 
+
         // Optionally, you can also set other UI settings based on your requirements
         myMap.getUiSettings().setMapToolbarEnabled(true);
+
+
+
+
     }
+
 }

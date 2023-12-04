@@ -11,7 +11,7 @@ import com.example.carnetdigital.R;
 
 public class menu_principal extends AppCompatActivity {
 
-    Button Btn_Horas, Btn_Registro, btn_RegistrarCarnet,btn_mapsCarnet;
+    Button Btn_Horas, Btn_Registro, btn_RegistrarCarnet,btn_mapsCarnet, btnTerminarRegistro, btnListaTareas;
 
 
     @Override
@@ -23,12 +23,22 @@ public class menu_principal extends AppCompatActivity {
         Btn_Registro = findViewById(R.id.Btn_Registro);
         btn_RegistrarCarnet = findViewById(R.id.btn_RegistrarCarnet);
         btn_mapsCarnet=findViewById(R.id.btn_mapsCarnet);
+        btnTerminarRegistro = (Button)findViewById(R.id.btnTerminarRegistro);
+        btnListaTareas = (Button) findViewById(R.id.btnListaTareas);
+
+        btnListaTareas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(menu_principal.this, Lista_Tarea.class);
+                startActivity(intent);
+            }
+        });
 
         Btn_Horas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Iniciar la actividad de siguiente hora
-                Intent intent = new Intent(menu_principal.this, Sisguiente_hora.class);
+                Intent intent = new Intent(menu_principal.this, RegistrarAgendaHora.class);
                 startActivity(intent);
             }
         });
@@ -58,11 +68,25 @@ public class menu_principal extends AppCompatActivity {
             }
         });
 
+        btnTerminarRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(menu_principal.this, GUI_AdultoMayor.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
 
     }
     public void Carnet(View view){
         Intent carnet = new Intent(menu_principal.this, CarnetDigital.class);
         startActivity(carnet);
     }
+
+
 }
 

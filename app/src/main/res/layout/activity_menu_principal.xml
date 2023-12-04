@@ -9,61 +9,96 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:gravity="center">
+        android:padding="10dp">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/Btn_Carnet"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            app:lottie_imageAssetsFolder="assets"
-            app:lottie_fileName="carnetDigital.json"
-            app:lottie_loop="true"
+            android:onClick="Carnet"
             app:lottie_autoPlay="true"
-            android:onClick="Carnet"/>
+            app:lottie_fileName="carnetDigital.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="true" />
 
         <TextView
-            android:text="@string/app_name"
-            android:textSize="30dp"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
-        <Button
-            android:id="@+id/Btn_Horas"
-            android:text="Agendar Hora"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:backgroundTint="@color/black"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/Btn_Registro"
-            android:text="Registro Usuario"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_marginTop="15dp"
+            android:text="@string/CarnetDigitalTXT"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_RegistrarCarnet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:textStyle="bold"
             android:backgroundTint="#007BFF"
+            android:paddingVertical="10dp"
+            android:text="Registrar Carnet"
             android:textSize="20dp"
-            android:text="Registrar Carnet" />
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Btn_Horas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:paddingVertical="10dp"
+            android:text="Agendar Hora"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnListaTareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#5224FA"
+            android:paddingVertical="10dp"
+            android:text="Listas de Tareas"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Btn_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="10dp"
+            android:text="Registrar Usuario CESFAM"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
         <Button
             android:id="@+id/btn_mapsCarnet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Ubicacion del cesfam" />
+            android:backgroundTint="#FA2424"
+            android:paddingVertical="10dp"
+            android:text="Ubicacion del cesfam"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/btnTerminarRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#4CAF50"
+            android:paddingVertical="10dp"
+            android:text="TERMINAR"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
