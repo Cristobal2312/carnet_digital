@@ -37,7 +37,7 @@ public class menu_principal extends AppCompatActivity {
         Btn_Horas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Iniciar la actividad de siguiente hora
+                // Iniciar la actividad de siguiente horaa
                 Intent intent = new Intent(menu_principal.this, RegistrarAgendaHora.class);
                 startActivity(intent);
             }
