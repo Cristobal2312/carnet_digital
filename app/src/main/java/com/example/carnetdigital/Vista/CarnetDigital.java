@@ -22,7 +22,7 @@ public class CarnetDigital extends AppCompatActivity {
 
     Button btnSoloDatos;
     Button btnVolver;
-
+    //ahola ejemplo
     TextView txtNombreC, txtApellidoC, txtRutC, txtNacionalidadC, txtSexoC, txtFechaNacimientoC, txtNumeroDocumentoC, txtFechaEmisionC, txtFechaVencimientoC;
     DBHelper conn;
     @Override
