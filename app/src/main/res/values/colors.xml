@@ -5,4 +5,5 @@
     <color name="mi_color_de_barra_de_estado">#3240BC</color>
     <color name="blue_button">#3F4C89</color>
     <color name="blue_background">#295EAE</color>
+    <color name="gray">#696969</color>
 </resources>
