@@ -2,60 +2,116 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_background"
     android:orientation="vertical">
 
-    <CheckBox
-        android:id="@+id/checkBoxDesayunar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Desayunar" />
-
-    <CheckBox
-        android:id="@+id/checkBoxAsearse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Asearse" />
-
-    <CheckBox
-        android:id="@+id/checkBoxCompras"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Realizar compras" />
-
-    <CheckBox
-        android:id="@+id/checkBoxAlmuerzo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Preparar Almuerzo" />
-
-    <CheckBox
-        android:id="@+id/checkBoxLlamarHijo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Llamar Hijo/a" />
-
-    <CheckBox
-        android:id="@+id/checkBoxVerPrograma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver programa" />
-
-    <Button
-        android:id="@+id/btnAgregarTarea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+ Agregar Tarea" />
-
-    <EditText
-        android:id="@+id/etNotasMedicas"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Agregar notas medicas..." />
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="30dp"
+        app:cardCornerRadius="20dp">
 
-    <Button
-        android:id="@+id/btnModificarNotas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Modificar Notas" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxDesayunar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Desayunar" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVerPrograma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Ver programa" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLlamarHijo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Llamar Hijo/a" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAlmuerzo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Preparar Almuerzo" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCompras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Realizar compras" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAsearse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Asearse" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAsearse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Asearse" />
+
+            <Button
+                android:id="@+id/btnAgregarTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@color/blue_button"
+                android:text="+ Agregar Tarea" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNotasMedicas"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="Agregar notas medicas..." />
+
+            <Button
+                android:id="@+id/btnModificarNotas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@color/blue_button"
+                android:layout-gravity="bottom"
+                android:text="Modificar Notas" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
