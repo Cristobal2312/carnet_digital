@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#295EAE"
+    android:background="@drawable/fondo_gradiente"
     tools:context=".Vista.GUI_AdultoMayor">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
-        android:layout_width="284dp"
+        android:layout_width="0dp"
         android:layout_height="175dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="63dp"
         android:background="@drawable/bordeazul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
         tools:ignore="MissingConstraints" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
@@ -32,12 +33,12 @@
             android:id="@+id/linearLayout"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@drawable/fondo_gradiente"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@color/blue_background">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:layout_width="match_parent"
@@ -52,7 +53,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
                 android:layout_width="316dp"
-                android:layout_height="227dp"
+                android:layout_height="430dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="20dp"
@@ -64,180 +65,139 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="32dp"
-                        android:text="MÉDICO"
+                        android:layout_marginTop="16dp"
+                        android:text="HORA"
                         android:textColor="@color/gray"
-                        android:textSize="30dp"
+                        android:textSize="35dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/txtNMedico"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginEnd="28dp"
+                        android:text="MÉDICO"
+                        android:textColor="@color/gray"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/txtNMedico"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNHorario"
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <TextView
                         android:id="@+id/txtNSala"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="28dp"
                         android:hint="A20-B"
                         android:text=""
                         android:textAlignment="center"
                         android:textColor="@color/gray"
                         android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.762"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.811"
+                        app:layout_constraintStart_toStartOf="@+id/txtNMedico"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNMedico"
                         tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
 
                     <TextView
                         android:id="@+id/txtNMedico"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="37dp"
                         android:hint="Pedro Alfaro Rodrigez"
-                        android:text=""
-                        android:textAlignment="center"
+                        android:justificationMode="none"
+                        android:text="Pedro Alfaro"
                         android:textColor="@color/gray"
                         android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView5"
                         tools:ignore="HardcodedText,SpUsage,TextSizeCheck,TextContrastCheck" />
 
                     <TextView
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="31dp"
                         android:text="BOX:"
-                        android:textColor="@color/gray"
-                        android:textSize="30dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/txtNSala"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.81"
-                        tools:ignore="HardcodedText,SpUsage" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="70dp"
-                android:gravity="center"
-                android:justificationMode="inter_word"
-                android:text="Nota: Recordar que debe presentarse 10 minutos antes de la consulta."
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                tools:ignore="HardcodedText" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="318dp"
-                android:layout_height="234dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                app:cardCornerRadius="20dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="232dp"
-                    android:background="@color/white">
-
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="44dp"
-                        android:text="Hora:"
-                        android:textColor="@color/gray"
-                        android:textSize="30dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/txtNHorario"
-                        app:layout_constraintHorizontal_bias="0.022"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView8"
-                        app:layout_constraintVertical_bias="0.368"
-                        tools:ignore="HardcodedText,SpUsage" />
-
-                    <TextView
-                        android:id="@+id/txtNHorario"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="14:30"
-                        android:text=""
-                        android:textAlignment="center"
                         android:textColor="@color/gray"
                         android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.712"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.794"
-                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="HORARIO"
-                        android:textColor="@color/gray"
-                        android:textSize="30dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.497"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.149"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="28dp"
                         android:text="Fecha:"
                         android:textColor="@color/gray"
-                        android:textSize="30dp"
+                        android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="@+id/txtNFecha"
-                        app:layout_constraintEnd_toStartOf="@+id/textView2"
-                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6"
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <TextView
                         android:id="@+id/txtNFecha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="16dp"
                         android:hint="20/12/2023"
                         android:text=""
                         android:textAlignment="center"
                         android:textColor="@color/gray"
                         android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/txtNHorario"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.627"
-                        app:layout_constraintStart_toEndOf="@+id/textView8"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.849"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNSala"
                         tools:ignore="HardcodedText,SpUsage,TextSizeCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/txtNHorario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:hint="14:30"
+                        android:text="1 4 : 3 0"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="50dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4"
+                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="33dp"
+                        android:layout_marginBottom="26dp"
+                        android:text="MÁS DETALLES"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtNFecha" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
