@@ -17,7 +17,7 @@ public class RegistrarAgendaHora extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar_agenda_hora);
 
-        EditText txtMedico = findViewById(R.id.txtMedico);
+        EditText txtMedico = findViewById(R.id.txtTerapeuta);
         EditText txtBox = findViewById(R.id.txtBox);
         EditText txtFecha = findViewById(R.id.txtFecha);
         EditText txtHorario = findViewById(R.id.txtHorario);

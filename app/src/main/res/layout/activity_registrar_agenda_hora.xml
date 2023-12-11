@@ -21,14 +21,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+        app:layout_constraintVertical_bias="0.346"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout6"
-        android:layout_width="350dp"
-        android:layout_height="430dp"
+        android:layout_width="360dp"
+        android:layout_height="481dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="30dp"
@@ -38,12 +40,47 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <EditText
+            android:id="@+id/txtNombrePaciente"
+            android:layout_width="258dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Nombre del Paciente"
+            android:inputType="date"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNumFicha"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtNumFicha"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Numero de ficha"
+            android:inputType="date"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRutPaciente"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck" />
+
+        <EditText
             android:id="@+id/txtFecha"
             android:layout_width="262dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="39dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="44dp"
+            android:backgroundTint="@color/black"
             android:ems="10"
             android:hint="DD/MM/YYYY"
             android:inputType="date"
@@ -58,23 +95,24 @@
             android:layout_width="262dp"
             android:layout_height="42dp"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="44dp"
+            android:backgroundTint="@color/black"
             android:ems="10"
-            android:hint="14:30"
+            android:hint="14:30 (Hora)"
             android:inputType="time"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtFecha"
-            tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+            tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/txtBox"
             android:layout_width="262dp"
             android:layout_height="42dp"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="44dp"
             android:backgroundTint="@color/black"
             android:ems="10"
@@ -84,19 +122,19 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtMedico"
+            app:layout_constraintTop_toBottomOf="@+id/txtTerapeuta"
             tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/txtMedico"
+            android:id="@+id/txtTerapeuta"
             android:layout_width="262dp"
             android:layout_height="42dp"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="59dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="44dp"
             android:backgroundTint="@color/black"
             android:ems="10"
-            android:hint="Medico"
+            android:hint="Terapeuta"
             android:inputType="text"
             android:text=""
             android:textSize="20sp"
@@ -104,6 +142,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtRutPaciente"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Rut Paciente"
+            android:inputType="date"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHorario"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
