@@ -96,13 +96,13 @@
         android:layout_marginTop="53dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="53dp"
-        android:text="Volver"
+        android:text="Nueva Cita"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
     <Button
-        android:id="@+id/BbtnNuevaCita"
+        android:id="@+id/BbbtnVolver"
         android:layout_width="152dp"
         android:layout_height="68dp"
         android:layout_marginStart="26dp"

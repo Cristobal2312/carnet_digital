@@ -1,20 +1,7 @@
 package com.example.carnetdigital.Modelo;
 
 public class Usuario {
-    /*
-     public static final String TABLA_CARNET = "CarnetUsuario";
 
-    public static final String CAMPO_IDUSER = "IDUsuario";
-    public static final String CAMPO_NOMBRE = "Nombre";
-    public static final String CAMPO_APELLIDO = "Apellido";
-    public static final String CAMPO_RUT = "Rut";
-    public static final String CAMPO_NACIONALIDAD = "Nacionalidad";
-    public static final String CAMPO_SEXO = "Sexo";
-    public static final String CAMPO_FENACIMIENTO = "FechaNacimiento";
-    public static final String CAMPO_NUDOCUMENTO = "NumeroDocumento";
-    public static final String CAMPO_FEEMISION = "FechaEmision";
-    public static final String CAMPO_FEVENCIMIENTO = "FechaVencimiento";
-    */
     private int id;
     private String Nombre;
     private String Apellido;
