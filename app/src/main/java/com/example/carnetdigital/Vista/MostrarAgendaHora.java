@@ -15,8 +15,8 @@ public class MostrarAgendaHora extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar_agenda_hora);
 
-        TextView txtNMedico = findViewById(R.id.txtNMedico);
-        TextView txtNSala = findViewById(R.id.txtNSala);
+        TextView txtNMedico = findViewById(R.id.VtxtNombrePaciente);
+        TextView txtNSala = findViewById(R.id.VtxtRutPaciente);
         TextView txtNFecha = findViewById(R.id.txtNFecha);
         TextView txtNHorario = findViewById(R.id.txtNHorario);
 

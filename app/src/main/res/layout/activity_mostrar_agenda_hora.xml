@@ -60,14 +60,14 @@
                         android:textColor="@color/gray"
                         android:textSize="30dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/txtNMedico"
+                        app:layout_constraintBottom_toTopOf="@+id/VtxtNombrePaciente"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <TextView
-                        android:id="@+id/txtNSala"
+                        android:id="@+id/VtxtRutPaciente"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:hint="A20-B"
@@ -85,7 +85,7 @@
                         tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
 
                     <TextView
-                        android:id="@+id/txtNMedico"
+                        android:id="@+id/VtxtNombrePaciente"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:hint="Pedro Alfaro Rodrigez"
@@ -109,7 +109,7 @@
                         android:textSize="30dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/txtNSala"
+                        app:layout_constraintEnd_toStartOf="@+id/VtxtRutPaciente"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.81"

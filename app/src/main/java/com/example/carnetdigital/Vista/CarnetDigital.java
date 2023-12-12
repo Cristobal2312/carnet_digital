@@ -106,11 +106,6 @@ public class CarnetDigital extends AppCompatActivity {
             txtFechaEmisionC.setText(FechaEmisionA);
             txtFechaVencimientoC.setText(FechaVencimientoA);
 
-
-
-
-
-
             //Toast.makeText(getApplicationContext(), "Usuario: "+ UsuarioBD + "Contraseña: " +ContraseñaBD, Toast.LENGTH_LONG).show();
 
         } catch (Exception e) {
