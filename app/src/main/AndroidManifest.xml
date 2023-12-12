@@ -16,6 +16,9 @@
         android:theme="@style/Theme.CarnetDigital"
         tools:targetApi="31">
         <activity
+            android:name=".Vista.GUI_AdultoMayorPAG_2"
+            android:exported="false" />
+        <activity
             android:name=".Vista.carnetMedico"
             android:exported="false" />
         <activity

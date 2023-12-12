@@ -26,17 +26,13 @@ public class RegistrarAgendaHora extends AppCompatActivity {
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String medico =txtMedico.getText().toString();
-                String box = txtBox.getText().toString();
-                String fecha = txtFecha.getText().toString();
-                String Horario = txtHorario.getText().toString();
+                //String medico =txtMedico.getText().toString();
+                //String box = txtBox.getText().toString();
+                //String fecha = txtFecha.getText().toString();
+                //String Horario = txtHorario.getText().toString();
 
-                Intent sIntent = new Intent(RegistrarAgendaHora.this, MostrarAgendaHora.class);
-                sIntent.putExtra("medico", medico);
-                sIntent.putExtra("box", box);
-                sIntent.putExtra("fecha", fecha);
-                sIntent.putExtra("Horario", Horario);
-                startActivity(sIntent);
+                //Intent sIntent = new Intent(RegistrarAgendaHora.this, MostrarAgendaHora.class);
+                //startActivity(sIntent);
             }
         });
     }

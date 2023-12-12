@@ -17,7 +17,7 @@
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/Btn_Carnet"
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="140dp"
             android:onClick="Carnet"
             app:lottie_autoPlay="true"
             app:lottie_fileName="carnetDigital.json"
@@ -38,8 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:backgroundTint="#007BFF"
-            android:paddingVertical="10dp"
-            android:text="Registrar Carnet"
+            android:paddingVertical="14dp"
+            android:text="Citas Asistida CD"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -48,8 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/black"
-            android:paddingVertical="10dp"
+            android:backgroundTint="#FF5722"
+            android:paddingVertical="14dp"
             android:text="Agendar Hora"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:backgroundTint="#5224FA"
-            android:paddingVertical="10dp"
+            android:paddingVertical="14dp"
             android:text="Listas de Tareas"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:paddingVertical="10dp"
+            android:paddingVertical="14dp"
             android:text="Registrar Usuario CESFAM"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -82,11 +82,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:backgroundTint="#FA2424"
-            android:paddingVertical="10dp"
+            android:paddingVertical="14dp"
             android:text="Ubicacion del cesfam"
             android:textSize="20dp"
             android:textStyle="bold" />
-
 
 
         <Button
@@ -95,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:backgroundTint="#4CAF50"
-            android:paddingVertical="10dp"
+            android:paddingVertical="14dp"
             android:text="TERMINAR"
             android:textSize="20dp"
             android:textStyle="bold" />
