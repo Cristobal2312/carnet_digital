@@ -58,7 +58,7 @@ public class menu_principal extends AppCompatActivity {
         btn_RegistrarCarnet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(menu_principal.this, RegistroCarnet.class);
+                Intent intent = new Intent(menu_principal.this, carnetMedico.class);
                 startActivity(intent);
             }
         });
