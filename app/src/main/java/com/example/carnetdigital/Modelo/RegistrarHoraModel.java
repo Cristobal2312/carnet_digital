@@ -2,7 +2,7 @@ package com.example.carnetdigital.Modelo;
 
 public class RegistrarHoraModel {
 
-    public class AgendaHora {
+    public static class AgendaHora {
         private long id;
         private String nombrePaciente;
         private String numFicha;
@@ -11,6 +11,7 @@ public class RegistrarHoraModel {
         private String horario;
         private String box;
         private String terapeuta;
+
 
         public long getId() {
             return id;
