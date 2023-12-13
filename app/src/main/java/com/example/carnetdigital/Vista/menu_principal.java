@@ -8,9 +8,7 @@ import android.widget.Button;
 
 import com.example.carnetdigital.R;
 
-/*
-*hola
-* */
+//Hola Damian
 public class menu_principal extends AppCompatActivity {
 
     Button Btn_Horas, Btn_Registro, btn_RegistrarCarnet,btn_mapsCarnet, btnTerminarRegistro, btnListaTareas;
