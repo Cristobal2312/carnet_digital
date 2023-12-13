@@ -1,5 +1,6 @@
 package com.example.carnetdigital.Vista;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -57,7 +58,10 @@ public class MostrarAgendaHora extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Lógica para volver, por ejemplo, cerrar la actividad
-                finish();
+                Intent intent = new Intent(MostrarAgendaHora.this, menu_principal.class);
+                startActivity(intent);
+
+
             }
         });
     }

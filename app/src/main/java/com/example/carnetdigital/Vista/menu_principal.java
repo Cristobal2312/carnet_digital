@@ -81,8 +81,9 @@ public class menu_principal extends AppCompatActivity {
         btnTerminarRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(menu_principal.this, GUI_AdultoMayor.class);
-                startActivity(intent);
+                finishAffinity();
+                //Intent intent = new Intent(menu_principal.this, GUI_AdultoMayor.class);
+                //startActivity(intent);
             }
         });
 
