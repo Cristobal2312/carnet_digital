@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:background="@color/blue_button"
+                android:backgroundTint="@color/blue_button"
                 android:text="+ Agregar Tarea" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:background="@color/blue_button"
+                android:backgroundTint="@color/blue_button"
                 android:text="Modificar Notas" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
