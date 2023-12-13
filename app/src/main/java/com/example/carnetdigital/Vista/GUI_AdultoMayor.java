@@ -10,7 +10,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -57,8 +56,8 @@ public class GUI_AdultoMayor extends AppCompatActivity {
 
         Hora = findViewById(R.id.txtNHorario);
         Fecha = findViewById(R.id.txtNFecha);
-        Tera = findViewById(R.id.txtNnombreTera);
-        Box = findViewById(R.id.txtNBox);
+        Tera = findViewById(R.id.txtJPaciente);
+        Box = findViewById(R.id.txtJRut);
 
         try {
             SQLiteDatabase db = dbHelper.getReadableDatabase();
