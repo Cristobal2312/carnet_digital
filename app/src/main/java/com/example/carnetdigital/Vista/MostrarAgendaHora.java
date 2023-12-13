@@ -3,7 +3,6 @@ package com.example.carnetdigital.Vista;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -21,10 +20,7 @@ public class MostrarAgendaHora extends AppCompatActivity {
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue_button));
         }
 
-        TextView txtNMedico = findViewById(R.id.VtxtNombrePaciente);
-        TextView txtNSala = findViewById(R.id.VtxtRutPaciente);
-        TextView txtNFecha = findViewById(R.id.txtNFecha);
-        TextView txtNHorario = findViewById(R.id.txtNHorario);
+
 
     }
 }
