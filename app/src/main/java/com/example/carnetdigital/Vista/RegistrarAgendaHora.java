@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.carnetdigital.Controlador.NuevaClaseDBHelper;
@@ -33,37 +35,45 @@ public class RegistrarAgendaHora extends AppCompatActivity {
     }
 
     private void insertarDatosEnDB() {
-        EditText txtNombrePaciente = findViewById(R.id.txtNombrePaciente);
-        EditText txtNumFicha = findViewById(R.id.txtNumFicha);
-        EditText txtFecha = findViewById(R.id.txtFecha);
-        EditText txtHorario = findViewById(R.id.txtHorario);
-        EditText txtBox = findViewById(R.id.txtBox);
-        EditText txtTerapeuta = findViewById(R.id.txtTerapeuta);
-        EditText txtRutPaciente = findViewById(R.id.txtRutPaciente);
 
-        // Obtener los valores de las vistas
-        String nombrePaciente = txtNombrePaciente.getText().toString();
-        String numeroFicha = txtNumFicha.getText().toString();
-        String fecha = txtFecha.getText().toString();
-        String horario = txtHorario.getText().toString();
-        String box = txtBox.getText().toString();
-        String terapeuta = txtTerapeuta.getText().toString();
-        String rutPaciente = txtRutPaciente.getText().toString();
+        try{
+            EditText txtNombrePaciente = findViewById(R.id.txtNombrePaciente);
+            EditText txtNumFicha = findViewById(R.id.txtNumFicha);
+            EditText txtFecha = findViewById(R.id.txtFecha);
+            EditText txtHorario = findViewById(R.id.txtHorario);
+            EditText txtBox = findViewById(R.id.txtBox);
+            EditText txtTerapeuta = findViewById(R.id.txtTerapeuta);
+            EditText txtRutPaciente = findViewById(R.id.txtRutPaciente);
 
-        // Insertar en la base de datos
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put("nombrePaciente", nombrePaciente);
-        values.put("numeroFicha", numeroFicha);
-        values.put("fecha", fecha);
-        values.put("hora", horario);
-        values.put("boxSala", box);
-        values.put("terapeuta", terapeuta);
-        values.put("rutPaciente", rutPaciente);
+            // Obtener los valores de las vistas
+            String nombrePaciente = txtNombrePaciente.getText().toString();
+            String numeroFicha = txtNumFicha.getText().toString();
+            String fecha = txtFecha.getText().toString();
+            String horario = txtHorario.getText().toString();
+            String box = txtBox.getText().toString();
+            String terapeuta = txtTerapeuta.getText().toString();
+            String rutPaciente = txtRutPaciente.getText().toString();
 
-        long newRowId = db.insert("agenda", null, values);
+            // Insertar en la base de datos
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+            ContentValues values = new ContentValues();
+            values.put("nombrePaciente", nombrePaciente);
+            values.put("numeroFicha", numeroFicha);
+            values.put("fecha", fecha);
+            values.put("hora", horario);
+            values.put("boxSala", box);
+            values.put("terapeuta", terapeuta);
+            values.put("rutPaciente", rutPaciente);
 
-        // Cierra la conexión de la base de datos
-        dbHelper.close();
+            long newRowId = db.insert("agenda", null, values);
+
+            Toast.makeText(getApplicationContext(), "Usuario Registrado: " + values.toString(), Toast.LENGTH_LONG).show();
+
+            // Cierra la conexión de la base de datos
+            dbHelper.close();
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "ERROR de Registro", Toast.LENGTH_LONG).show();
+        }
+
     }
 }

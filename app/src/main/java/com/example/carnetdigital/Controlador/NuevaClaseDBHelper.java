@@ -8,7 +8,7 @@ public class NuevaClaseDBHelper extends SQLiteOpenHelper {
 
     // Cambia el nombre de la base de datos aquí
     private static final String DATABASE_NAME = "NuevoNombreDeLaBD";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     private static final String CREATE_TABLE_AGENDA = "CREATE TABLE agenda " +
             "(id INTEGER PRIMARY KEY AUTOINCREMENT, " +
