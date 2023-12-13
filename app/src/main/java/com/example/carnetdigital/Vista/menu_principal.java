@@ -3,12 +3,16 @@ package com.example.carnetdigital.Vista;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.example.carnetdigital.Controlador.UtilityRoles;
 import com.example.carnetdigital.R;
 
 /*
@@ -18,12 +22,15 @@ import com.example.carnetdigital.R;
 public class menu_principal extends AppCompatActivity {
 
     Button Btn_Horas, Btn_Registro, btn_RegistrarCarnet,btn_mapsCarnet, btnTerminarRegistro, btnListaTareas;
+    private UtilityRoles dbHelper;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+
+        dbHelper = new UtilityRoles(this);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue_button));
@@ -81,6 +88,7 @@ public class menu_principal extends AppCompatActivity {
         btnTerminarRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                CambiarRol();
                 finishAffinity();
                 //Intent intent = new Intent(menu_principal.this, GUI_AdultoMayor.class);
                 //startActivity(intent);
@@ -98,6 +106,48 @@ public class menu_principal extends AppCompatActivity {
         startActivity(carnet);
     }
 
+
+    public void CambiarRol(){
+        try{
+            eliminarTodosLosDatos();
+
+            // Obtener los valores de las vistas
+            String ID2 = "1";
+            String Roles = "2";
+
+            // Insertar en la base de datos
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+            ContentValues values = new ContentValues();
+            values.put("id", ID2);
+            values.put("Rol", Roles);
+
+            long newRowId = db.insert("Roles", null, values);
+
+            // Cierra la conexión de la base de datos
+            dbHelper.close();
+
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(), "ERROR de Registro", Toast.LENGTH_SHORT).show();
+            eliminarTodosLosDatos();
+        }
+
+    }
+
+    private void eliminarTodosLosDatos() {
+        try {
+            // Abre la base de datos en modo escritura
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+            // Elimina todos los registros de la tabla "agenda"
+            db.delete("Roles", null, null);
+
+            // Cierra la conexión de la base de datos
+            dbHelper.close();
+
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Error al intentar eliminar los datos", Toast.LENGTH_SHORT).show();
+        }
+    }
 
 }
 

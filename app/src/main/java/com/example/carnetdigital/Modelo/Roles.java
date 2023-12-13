@@ -1,13 +1,23 @@
 package com.example.carnetdigital.Modelo;
 
 public class Roles {
+    private int ID;
     private int Rol;
 
     public Roles() {
     }
 
-    public Roles(int rol) {
+    public Roles(int ID, int rol) {
+        this.ID = ID;
         Rol = rol;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public int getRol() {
@@ -21,7 +31,8 @@ public class Roles {
     @Override
     public String toString() {
         return "Roles{" +
-                "Rol=" + Rol +
+                "ID=" + ID +
+                ", Rol=" + Rol +
                 '}';
     }
 }
