@@ -1,6 +1,8 @@
 package com.example.carnetdigital.Vista;
 
 import android.content.ContentValues;
+import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -35,6 +37,7 @@ public class RegistrarAgendaHora extends AppCompatActivity {
     }
 
     private void insertarDatosEnDB() {
+        eliminarTodosLosDatos();
 
         try{
             EditText txtNombrePaciente = findViewById(R.id.txtNombrePaciente);
@@ -46,6 +49,7 @@ public class RegistrarAgendaHora extends AppCompatActivity {
             EditText txtRutPaciente = findViewById(R.id.txtRutPaciente);
 
             // Obtener los valores de las vistas
+            String ID = "1";
             String nombrePaciente = txtNombrePaciente.getText().toString();
             String numeroFicha = txtNumFicha.getText().toString();
             String fecha = txtFecha.getText().toString();
@@ -57,6 +61,7 @@ public class RegistrarAgendaHora extends AppCompatActivity {
             // Insertar en la base de datos
             SQLiteDatabase db = dbHelper.getWritableDatabase();
             ContentValues values = new ContentValues();
+            values.put("id", ID);
             values.put("nombrePaciente", nombrePaciente);
             values.put("numeroFicha", numeroFicha);
             values.put("fecha", fecha);
@@ -67,13 +72,35 @@ public class RegistrarAgendaHora extends AppCompatActivity {
 
             long newRowId = db.insert("agenda", null, values);
 
-            Toast.makeText(getApplicationContext(), "Usuario Registrado: " + values.toString(), Toast.LENGTH_LONG).show();
-
             // Cierra la conexión de la base de datos
             dbHelper.close();
+
+            Intent intent = new Intent(RegistrarAgendaHora.this, MostrarAgendaHora.class);
+            startActivity(intent);
+
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(), "ERROR de Registro", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "ERROR de Registro", Toast.LENGTH_SHORT).show();
+            eliminarTodosLosDatos();
         }
 
     }
+
+    private void eliminarTodosLosDatos() {
+        try {
+            // Abre la base de datos en modo escritura
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+            // Elimina todos los registros de la tabla "agenda"
+            db.delete("agenda", null, null);
+
+            // Cierra la conexión de la base de datos
+            dbHelper.close();
+
+            Toast.makeText(getApplicationContext(), "Todos los datos han sido eliminados", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Error al intentar eliminar los datos", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
 }

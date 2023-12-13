@@ -16,6 +16,9 @@
         android:theme="@style/Theme.CarnetDigital"
         tools:targetApi="31">
         <activity
+            android:name=".ListaDATOS"
+            android:exported="false" />
+        <activity
             android:name=".MSGNuevaCitaMedica"
             android:exported="false" />
         <activity

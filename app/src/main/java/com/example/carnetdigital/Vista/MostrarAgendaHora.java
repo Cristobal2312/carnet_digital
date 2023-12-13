@@ -1,17 +1,24 @@
 package com.example.carnetdigital.Vista;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.carnetdigital.Controlador.DBHelper;
+import com.example.carnetdigital.Controlador.NuevaClaseDBHelper;
+import com.example.carnetdigital.Controlador.UtilityUS;
 import com.example.carnetdigital.R;
 
-public class MostrarAgendaHora extends AppCompatActivity {
 
+public class MostrarAgendaHora extends AppCompatActivity {
+    private NuevaClaseDBHelper dbHelper;
     private TextView txtNombrePaciente;
     private TextView txtNumeroFicha;
     private TextView txtRutPaciente;
@@ -20,10 +27,13 @@ public class MostrarAgendaHora extends AppCompatActivity {
     private TextView txtMedico;
     private TextView txtBox;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar_agenda_hora);
+
+        dbHelper = new NuevaClaseDBHelper(this);
 
         // Inicializar vistas
         txtNombrePaciente = findViewById(R.id.HtxtNombrePaciente);
@@ -34,23 +44,11 @@ public class MostrarAgendaHora extends AppCompatActivity {
         txtMedico = findViewById(R.id.HtxtNombreTera);
         txtBox = findViewById(R.id.HtxtBox);
 
-        // Obtener datos de la agenda (puedes obtener estos datos de tu base de datos o de donde sea necesario)
-        String nombrePaciente = "Pedro Alfaro Rodrigez";
-        String numeroFicha = "A20-B";
-        String rutPaciente = "12345678-9";
-        String fecha = "20/12/2023";
-        String horario = "14:30";
-        String medico = "Dr. Smith"; // Reemplaza esto con el nombre real del médico
-        String box = "A101"; // Reemplaza esto con el número real del box
+        consultar();
 
-        // Establecer los datos en las vistas
-        txtNombrePaciente.setText(nombrePaciente);
-        txtNumeroFicha.setText(numeroFicha);
-        txtRutPaciente.setText(rutPaciente);
-        txtNFecha.setText(fecha);
-        txtNHorario.setText(horario);
-        txtMedico.setText(medico);
-        txtBox.setText(box);
+        // Obtener datos de la agenda (puedes obtener estos datos de tu base de datos o de donde sea necesario)
+
+
 
         // Agregar un listener al botón para volver
         Button btnVolver = findViewById(R.id.HbtnVolver);
@@ -64,5 +62,44 @@ public class MostrarAgendaHora extends AppCompatActivity {
 
             }
         });
+    }
+
+
+    private void consultar() {
+        //conexion a la base de dato para leer los datos
+
+
+        try {
+            SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+            String[] parametros = {"1"}; //Usuario Asignado por ID
+            //Consulta de base de dato
+            Cursor cursor = db.rawQuery("SELECT nombrePaciente, numeroFicha, fecha, hora, boxSala, terapeuta, rutPaciente FROM agenda WHERE id =? ", parametros);
+            cursor.moveToFirst();
+
+
+
+            //obtener los datos del cursor Usuario y Contraseña de la base de datoss
+            String nombrePaciente = cursor.getString(0);
+            String numeroFicha = cursor.getString(1);
+            String fecha = cursor.getString(2);
+            String horario = cursor.getString(3);
+            String box = cursor.getString(4);
+            String medico = cursor.getString(5);
+            String rutPaciente = cursor.getString(6);
+
+
+            txtNombrePaciente.setText(nombrePaciente);
+            txtNumeroFicha.setText(numeroFicha);
+            txtRutPaciente.setText(rutPaciente);
+            txtNFecha.setText(fecha);
+            txtNHorario.setText(horario);
+            txtMedico.setText(medico);
+            txtBox.setText(box);
+
+
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "(Error de BD)", Toast.LENGTH_LONG).show();
+        }
     }
 }

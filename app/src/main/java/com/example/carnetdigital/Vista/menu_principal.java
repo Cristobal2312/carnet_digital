@@ -93,8 +93,8 @@ public class menu_principal extends AppCompatActivity {
 
 
     }
-    public void Carnet(View view){
-        Intent carnet = new Intent(menu_principal.this, CarnetDigital.class);
+    public void Ejecutar(View view){
+        Intent carnet = new Intent(menu_principal.this, MostrarAgendaHora.class);
         startActivity(carnet);
     }
 
