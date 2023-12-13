@@ -39,8 +39,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
-                android:layout_width="316dp"
-                android:layout_height="227dp"
+                android:layout_width="318dp"
+                android:layout_height="563dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="20dp"
@@ -49,186 +49,263 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="569dp"
+                    tools:layout_editor_absoluteX="7dp"
+                    tools:layout_editor_absoluteY="-47dp">
+
+                    <!-- Agregado Numero de ficha, Nombre del Paciente, Rut Paciente -->
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/textView24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="32dp"
-                        android:text="MÉDICO"
+                        android:layout_marginStart="91dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="89dp"
+                        android:text="Terapeuta"
                         android:textColor="@color/gray"
                         android:textSize="30dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/VtxtNombrePaciente"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25"
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <TextView
-                        android:id="@+id/VtxtRutPaciente"
+                        android:id="@+id/textView25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="16dp"
+                        android:text="SALA:"
+                        android:textColor="@color/gray"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView26"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/HtxtBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="31dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="119dp"
                         android:hint="A20-B"
                         android:text=""
                         android:textAlignment="center"
                         android:textColor="@color/gray"
                         android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.762"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.811"
+                        app:layout_constraintStart_toEndOf="@+id/textView25"
+                        app:layout_constraintTop_toBottomOf="@+id/HtxtHora"
                         tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
 
                     <TextView
-                        android:id="@+id/VtxtNombrePaciente"
+                        android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="17dp"
+                        android:text="Nu de ficha:"
+                        android:textColor="@color/gray"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/HtxtNFicha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="49dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="123dp"
+                        android:hint="1"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView9"
+                        app:layout_constraintTop_toBottomOf="@+id/HtxtRut"
+                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="Nombre del Paciente:"
+                        android:textColor="@color/gray"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/HtxtNombreTera"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/HtxtNombrePaciente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:hint="Ana Valentina Cortez Rodrigez"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23"
+                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/HtxtNombreTera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="33dp"
                         android:hint="Pedro Alfaro Rodrigez"
                         android:text=""
                         android:textAlignment="center"
                         android:textColor="@color/gray"
                         android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView24"
                         tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="SALA:"
-                        android:textColor="@color/gray"
-                        android:textSize="30dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/VtxtRutPaciente"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.81"
-                        tools:ignore="HardcodedText,SpUsage" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:text="Nota: Recordar que debe presentarse 10 minutos antes de la consulta."
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:layout_marginHorizontal="70dp"
-                tools:ignore="HardcodedText" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="318dp"
-                android:layout_height="234dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                app:cardCornerRadius="20dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="232dp"
-                    android:background="@color/white">
-
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="44dp"
-                        android:text="Hora:"
-                        android:textColor="@color/gray"
-                        android:textSize="30dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/txtNHorario"
-                        app:layout_constraintHorizontal_bias="0.022"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView8"
-                        app:layout_constraintVertical_bias="0.368"
-                        tools:ignore="HardcodedText,SpUsage" />
-
-                    <TextView
-                        android:id="@+id/txtNHorario"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="14:30"
-                        android:text=""
-                        android:textAlignment="center"
-                        android:textColor="@color/gray"
-                        android:textSize="25dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.712"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.794"
-                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="HORARIO"
-                        android:textColor="@color/gray"
-                        android:textSize="30dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.497"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.149"
-                        tools:ignore="HardcodedText,SpUsage" />
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="17dp"
+                        android:text="Rut Paciente:"
+                        android:textColor="@color/gray"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/HtxtNombrePaciente"
+                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/HtxtRut"
+                        android:layout_width="110dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="56dp"
+                        android:hint="21.341.123-1"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView8"
+                        app:layout_constraintTop_toBottomOf="@+id/HtxtNombrePaciente"
+                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/HtxtHora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginEnd="114dp"
+                        android:hint="14:30"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView26"
+                        app:layout_constraintTop_toBottomOf="@+id/HtxtFecha"
+                        tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="17dp"
+                        android:text="HORA"
+                        android:textColor="@color/gray"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView27"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="16dp"
                         android:text="Fecha:"
                         android:textColor="@color/gray"
                         android:textSize="30dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="@+id/txtNFecha"
-                        app:layout_constraintEnd_toStartOf="@+id/textView2"
-                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <TextView
-                        android:id="@+id/txtNFecha"
+                        android:id="@+id/HtxtFecha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="56dp"
                         android:hint="20/12/2023"
                         android:text=""
                         android:textAlignment="center"
                         android:textColor="@color/gray"
                         android:textSize="25dp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/txtNHorario"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.627"
-                        app:layout_constraintStart_toEndOf="@+id/textView8"
+                        app:layout_constraintStart_toEndOf="@+id/textView27"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.849"
                         tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+                    <Button
+                        android:id="@+id/HbtnVolver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="115dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="114dp"
+                        android:layout_marginBottom="11dp"
+                        android:backgroundTint="@color/blue_button"
+                        android:text="Volver"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/HtxtNFicha" />
+
+                    <!-- ... Otro código existente ... -->
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
+            <!-- ... Otro código existente ... -->
+
         </LinearLayout>
 
+        <!-- Agregado un botón de volver -->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
