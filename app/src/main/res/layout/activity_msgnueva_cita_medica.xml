@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="0dp"
         android:background="@drawable/fondo_gradiente"
         android:orientation="vertical"
