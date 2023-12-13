@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_background"
     tools:context=".Vista.menu_principal">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="380dp"
+        android:layout_height="637dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bordeblanco"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/Btn_Carnet"
@@ -21,7 +34,8 @@
             app:lottie_autoPlay="true"
             app:lottie_fileName="carnetDigital.json"
             app:lottie_imageAssetsFolder="assets"
-            app:lottie_loop="true" />
+            app:lottie_loop="true"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,76 +43,83 @@
             android:layout_marginTop="15dp"
             android:text="@string/CarnetDigitalTXT"
             android:textSize="30dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
 
         <Button
             android:id="@+id/btn_RegistrarCarnet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
             android:layout_marginTop="5dp"
             android:backgroundTint="#007BFF"
             android:paddingVertical="14dp"
             android:text="Citas Asistida CD"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
         <Button
             android:id="@+id/Btn_Horas"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="#FF5722"
             android:paddingVertical="14dp"
             android:text="Agendar Hora"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
         <Button
             android:id="@+id/btnListaTareas"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:backgroundTint="#5224FA"
             android:paddingVertical="14dp"
             android:text="Listas de Tareas"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
         <Button
             android:id="@+id/Btn_Registro"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:paddingVertical="14dp"
             android:text="Registrar Usuario CESFAM"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
 
         <Button
             android:id="@+id/btn_mapsCarnet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
             android:layout_marginTop="5dp"
             android:backgroundTint="#FA2424"
             android:paddingVertical="14dp"
             android:text="Ubicacion del cesfam"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
 
         <Button
             android:id="@+id/btnTerminarRegistro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
             android:layout_marginTop="5dp"
             android:backgroundTint="#4CAF50"
             android:paddingVertical="14dp"
             android:text="TERMINAR"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck,TextContrastCheck" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
