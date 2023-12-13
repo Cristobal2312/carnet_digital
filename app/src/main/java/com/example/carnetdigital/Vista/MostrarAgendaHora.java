@@ -20,17 +20,5 @@ public class MostrarAgendaHora extends AppCompatActivity {
         TextView txtNFecha = findViewById(R.id.txtNFecha);
         TextView txtNHorario = findViewById(R.id.txtNHorario);
 
-        Intent intent = getIntent();
-        if(intent != null){
-            String MEDICO = getIntent().getStringExtra("medico");
-            String SALA = getIntent().getStringExtra("box");
-            String FECHA = getIntent().getStringExtra("fecha");
-            String HORARIO = getIntent().getStringExtra("Horario");
-
-            txtNMedico.setText(MEDICO);
-            txtNSala.setText(SALA);
-            txtNFecha.setText(FECHA);
-            txtNHorario.setText(HORARIO);
-        }
     }
 }
