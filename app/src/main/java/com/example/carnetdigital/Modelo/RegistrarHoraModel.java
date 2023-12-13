@@ -2,50 +2,78 @@ package com.example.carnetdigital.Modelo;
 
 public class RegistrarHoraModel {
 
-    private String nombrePaciente;
-    private String numFicha;
-    private String fecha;
-    private String horario;
-    private String box;
-    private String terapeuta;
-    private String rutPaciente;
+    public class AgendaHora {
+        private long id;
+        private String nombrePaciente;
+        private String numFicha;
+        private String rutPaciente;
+        private String fecha;
+        private String horario;
+        private String box;
+        private String terapeuta;
 
-    public RegistrarHoraModel(String nombrePaciente, String numFicha, String fecha, String horario, String box, String terapeuta, String rutPaciente) {
-        this.nombrePaciente = nombrePaciente;
-        this.numFicha = numFicha;
-        this.fecha = fecha;
-        this.horario = horario;
-        this.box = box;
-        this.terapeuta = terapeuta;
-        this.rutPaciente = rutPaciente;
-    }
+        public long getId() {
+            return id;
+        }
 
-    // Agrega getters y setters según sea necesario
-    public String getNombrePaciente() {
-        return nombrePaciente;
-    }
+        public void setId(long id) {
+            this.id = id;
+        }
 
-    public String getNumFicha() {
-        return numFicha;
-    }
+        public String getNombrePaciente() {
+            return nombrePaciente;
+        }
 
-    public String getFecha() {
-        return fecha;
-    }
+        public void setNombrePaciente(String nombrePaciente) {
+            this.nombrePaciente = nombrePaciente;
+        }
 
-    public String getHorario() {
-        return horario;
-    }
+        public String getNumFicha() {
+            return numFicha;
+        }
 
-    public String getBox() {
-        return box;
-    }
+        public void setNumFicha(String numFicha) {
+            this.numFicha = numFicha;
+        }
 
-    public String getTerapeuta() {
-        return terapeuta;
-    }
+        public String getRutPaciente() {
+            return rutPaciente;
+        }
 
-    public String getRutPaciente() {
-        return rutPaciente;
-    }
-}
+        public void setRutPaciente(String rutPaciente) {
+            this.rutPaciente = rutPaciente;
+        }
+
+        public String getFecha() {
+            return fecha;
+        }
+
+        public void setFecha(String fecha) {
+            this.fecha = fecha;
+        }
+
+        public String getHorario() {
+            return horario;
+        }
+
+        public void setHorario(String horario) {
+            this.horario = horario;
+        }
+
+        public String getBox() {
+            return box;
+        }
+
+        public void setBox(String box) {
+            this.box = box;
+        }
+
+        public String getTerapeuta() {
+            return terapeuta;
+        }
+
+        public void setTerapeuta(String terapeuta) {
+            this.terapeuta = terapeuta;
+        }
+
+    }}
