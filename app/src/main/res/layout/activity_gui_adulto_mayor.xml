@@ -174,7 +174,7 @@
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <Button
-                        android:id="@+id/button11"
+                        android:id="@+id/CbtnMas"
                         android:layout_width="193dp"
                         android:layout_height="74dp"
                         android:layout_marginStart="62dp"
