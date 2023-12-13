@@ -167,7 +167,10 @@ public class MainActivity extends AppCompatActivity {
             values.put("id", ID2);
             values.put("Rol", Roles);
             long newRowId = db.insert("Roles", null, values);
-            Toast.makeText(getApplicationContext(), "(ABRIR DE NUEVO LA APLICACION)", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "(Reiniciando)", Toast.LENGTH_LONG).show();
+
+            startActivity(new Intent(MainActivity.this, MainActivity.class));
+
         }
     }
 

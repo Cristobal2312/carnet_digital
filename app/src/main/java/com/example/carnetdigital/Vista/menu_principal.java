@@ -89,7 +89,8 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CambiarRol();
-                finishAffinity();
+                finish();
+                //finishAffinity();
                 //Intent intent = new Intent(menu_principal.this, GUI_AdultoMayor.class);
                 //startActivity(intent);
             }
@@ -126,6 +127,8 @@ public class menu_principal extends AppCompatActivity {
             // Cierra la conexión de la base de datos
             dbHelper.close();
 
+            startActivity(new Intent(menu_principal.this, MainActivity.class));
+            finish();
         }catch (Exception e){
             Toast.makeText(getApplicationContext(), "ERROR de Registro", Toast.LENGTH_SHORT).show();
             eliminarTodosLosDatos();

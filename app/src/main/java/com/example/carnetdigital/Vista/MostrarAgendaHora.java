@@ -58,6 +58,7 @@ public class MostrarAgendaHora extends AppCompatActivity {
                 // Lógica para volver, por ejemplo, cerrar la actividad
                 Intent intent = new Intent(MostrarAgendaHora.this, menu_principal.class);
                 startActivity(intent);
+                finish();
 
 
             }

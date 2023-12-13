@@ -32,6 +32,7 @@ public class RegistrarAgendaHora extends AppCompatActivity {
             public void onClick(View v) {
                 // Al hacer clic en el botón Registrar, recoger los datos de las vistas
                 insertarDatosEnDB();
+                finish();
             }
         });
     }
