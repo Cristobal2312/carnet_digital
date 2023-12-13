@@ -34,15 +34,14 @@ public class carnetMedico extends AppCompatActivity {
                 // Inicia la actividad menu_principal
                 Intent intent = new Intent(carnetMedico.this, MSGNuevaCitaMedica.class);
                 startActivity(intent);
+                finish();
             }
         });
 
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Inicia la actividad menu_principal
-                Intent intent = new Intent(carnetMedico.this, menu_principal.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

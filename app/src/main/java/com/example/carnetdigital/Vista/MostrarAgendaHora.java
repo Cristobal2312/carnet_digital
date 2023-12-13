@@ -97,7 +97,7 @@ public class MostrarAgendaHora extends AppCompatActivity {
             txtNHorario.setText(horario);
             txtMedico.setText(medico);
             txtBox.setText(box);
-
+            dbHelper.close();
 
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "(Error de BD)", Toast.LENGTH_LONG).show();
