@@ -1,8 +1,10 @@
 package com.example.carnetdigital.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +24,10 @@ public class GUI_AdultoMayorPAG_2 extends AppCompatActivity {
         VbtnListaTareas = (Button) findViewById(R.id.VbtnListaTareas);
         VbtnUbicacion = (Button) findViewById(R.id.VbtnUbicacion);
         VbtnCarnetMedico = (Button) findViewById(R.id.VbtnCarnetMedico);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue_button));
+        }
 
         VbtnUbicacion.setOnClickListener(new View.OnClickListener() {
             @Override
